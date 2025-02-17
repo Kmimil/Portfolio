@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-black;
+  }
+}
+
+@layer utilities {
+  .backdrop-blur-sm {
+    backdrop-filter: blur(8px);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out;
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 0.5rem rgba(34, 211, 238, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 1rem rgba(34, 211, 238, 0.4));
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
