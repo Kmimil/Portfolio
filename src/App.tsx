@@ -299,46 +299,46 @@ function App() {
             Compétences
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm transform hover:scale-105 transition-all duration-300 hover:bg-gray-800/50">
+            <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm transform hover:scale-105 transition-all duration-300 hover:bg-gray-800/50 flex flex-col items-center text-center">
               <Terminal className="w-12 h-12 text-cyan-400 mb-4" />
               <h3 className="text-xl font-semibold mb-4">Front-end</h3>
               <ul className="space-y-2 text-gray-300">
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-3 justify-center">
                   <Star className="w-4 h-4 text-cyan-400" />
                   React.js
                 </li>
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-2 justify-center">
                   <Star className="w-4 h-4 text-cyan-400" />
                   HTML
                 </li>
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-2 justify-center">
                   <Star className="w-4 h-4 text-cyan-400" />
                   CSS
                 </li>
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-2 justify-center">
                   <Star className="w-4 h-4 text-cyan-400" />
                   JavaScript
                 </li>
               </ul>
             </div>
             
-            <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm transform hover:scale-105 transition-all duration-300 hover:bg-gray-800/50">
+            <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm transform hover:scale-105 transition-all duration-300 hover:bg-gray-800/50 flex flex-col items-center text-center">
               <Brain className="w-12 h-12 text-cyan-400 mb-4" />
               <h3 className="text-xl font-semibold mb-4">Soft Skills</h3>
               <ul className="space-y-2 text-gray-300">
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-2 justify-center">
                   <Star className="w-4 h-4 text-cyan-400" />
                   Gestion de projet
                 </li>
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-2 justify-center">
                   <Star className="w-4 h-4 text-cyan-400" />
                   Travail d'équipe
                 </li>
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-2 justify-center">
                   <Star className="w-4 h-4 text-cyan-400" />
                   Résolution de problèmes
                 </li>
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-2 justify-center">
                   <Star className="w-4 h-4 text-cyan-400" />
                   Communication
                 </li>
