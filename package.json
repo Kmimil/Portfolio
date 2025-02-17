@@ -8,12 +8,18 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+<<<<<<< HEAD
     "start": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
+=======
+    "start": "vite"
+  },
+  "dependencies": {
+>>>>>>> 8fdd757297bd04109b6ff9bfe519f230731df191
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
@@ -32,7 +38,12 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",
+<<<<<<< HEAD
     "vite": "^5.4.14"
   },
   "homepage": "https://kmimil.github.io/Portfolio/"
+=======
+    "vite": "^5.4.2"
+  }
+>>>>>>> 8fdd757297bd04109b6ff9bfe519f230731df191
 }
