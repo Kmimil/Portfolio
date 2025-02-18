@@ -8,7 +8,39 @@
   }
   
   body {
-    @apply bg-black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p, li, a {
+    font-size: 1.25rem;
+    line-height: 1.8;
+  }
+
+  .nav-link {
+    font-size: 1.125rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    font-weight: 700;
   }
 }
 
@@ -44,4 +76,23 @@
 
 .animate-glow {
   animation: glow 2s ease-in-out infinite;
+}
+
+/* Classes responsives pour le texte */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  p, li, a {
+    font-size: 1.125rem;
+  }
 }

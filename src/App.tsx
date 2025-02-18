@@ -81,7 +81,7 @@ function App() {
                 <FileArchive className="w-32 h-32 text-cyan-400 animate-pulse" />
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 blur-xl opacity-20"></div>
               </div>
-              <p className="mt-8 text-gray-400 text-lg">Cliquez pour décompresser le portfolio</p>
+              <p className="mt-8 text-gray-400 text-lg">Click to unzip the portfolio</p>
             </div>
           ) : (
             <div className="space-y-8">
@@ -100,8 +100,8 @@ function App() {
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 blur-xl opacity-20"></div>
               </div>
               <div className="space-y-2">
-                <p className="text-gray-400">Décompression du portfolio en cours...</p>
-                <p className="text-sm text-gray-500">Préparation des composants</p>
+                <p className="text-gray-400">Unzipping the portfolio...</p>
+                <p className="text-sm text-gray-500">Preparing components</p>
               </div>
             </div>
           )}
@@ -118,8 +118,8 @@ function App() {
       image: frImage
     },
     {
-      title: "Car renting management system",
-      description: "Car renting management system app ",
+      title: "Car Renting Management System",
+      description: "Car renting management system app",
       tech: ["Python", "Tkinter", "MySQL", "PhPMyAdmin"],
       image: frImage1
     },
@@ -129,17 +129,17 @@ function App() {
     {
       icon: <Layout className="w-12 h-12" />,
       title: "UI/UX Design",
-      description: "Création d'interfaces utilisateur modernes et intuitives"
+      description: "Creating modern and intuitive user interfaces"
     },
     {
       icon: <Code className="w-12 h-12" />,
-      title: "Développement Front-end",
-      description: "Développement d'applications web réactives et performantes"
+      title: "Front-end Development",
+      description: "Developing responsive and high-performance web applications"
     },
     {
       icon: <Shield className="w-12 h-12" />,
-      title: "Sécurité Web",
-      description: "Audit et sécurisation d'applications web"
+      title: "Web Security",
+      description: "Auditing and securing web applications"
     },
   ];
 
@@ -233,9 +233,9 @@ function App() {
           <div className="relative w-48 h-48 mx-auto mb-8 flex justify-center items-center">
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full animate-pulse"></div>
             <img
-            src={frImage2}
-            alt="Profile"
-            className="relative z-10 w-full h-full object-cover rounded-full border-4 border-gray-800 p-1"
+              src={frImage2}
+              alt="Profile"
+              className="relative z-10 w-full h-full object-cover rounded-full border-4 border-gray-800 p-1 bounce"
             />    
           </div>
           <a href="#about" className="inline-flex items-center animate-bounce">
@@ -246,46 +246,64 @@ function App() {
       
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gradient-to-b from-black to-gray-900">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
-            À propos
+      <section id="about" className="py-24 bg-gradient-to-b from-black to-gray-900">
+        <div className="container mx-auto px-8">
+          <h2 className="text-5xl font-bold mb-16 text-center bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+            About
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <p className="text-lg text-gray-300">
-                Étudiant passionné en 4ème année à l'ENSA d'El Jadida, je me spécialise en Cybersecurity and Confidence Trust
-                tout en développant une expertise solide en développement front-end.
-              </p>
-              <p className="text-lg text-gray-300">
-                Mon objectif est de créer des interfaces web innovantes et sécurisées, en combinant design moderne
-                et meilleures pratiques de sécurité.
-              </p>
-              <div className="grid grid-cols-2 gap-4 mt-8">
-                <div className="bg-gray-800/30 p-4 rounded-lg">
-                  <h4 className="font-semibold text-cyan-400">2+</h4>
-                  <p className="text-sm text-gray-400">Années d'expérience</p>
+          
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-12 gap-12 items-center">
+              {/* Colonne de gauche - Photo */}
+              <div className="md:col-span-5 relative group">
+                <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105">
+                  <img 
+                    src="/votre-photo.jpg" 
+                    alt="Profile" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
-                <div className="bg-gray-800/30 p-4 rounded-lg">
-                  <h4 className="font-semibold text-cyan-400">2+</h4>
-                  <p className="text-sm text-gray-400">Projets réalisés</p>
-                </div>
-                <div className="bg-gray-800/30 p-4 rounded-lg">
-                  <h4 className="font-semibold text-cyan-400">15+</h4>
-                  <p className="text-sm text-gray-400">Technologies maîtrisées</p>
-                </div>
+                {/* Effet de glow */}
+                <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full opacity-20 blur-3xl"></div>
               </div>
-            </div>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-gray-800/50 p-6 rounded-xl backdrop-blur-sm transform hover:scale-105 transition-all hover:bg-gray-800/70">
-                <Code2 className="w-12 h-12 text-cyan-400 mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Développement</h3>
-                <p className="text-gray-400">Création d'interfaces modernes et réactives</p>
-              </div>
-              <div className="bg-gray-800/50 p-6 rounded-xl backdrop-blur-sm transform hover:scale-105 transition-all hover:bg-gray-800/70">
-                <Shield className="w-12 h-12 text-cyan-400 mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Sécurité</h3>
-                <p className="text-gray-400">Protection des données et des applications</p>
+
+              {/* Colonne de droite - Contenu */}
+              <div className="md:col-span-7 space-y-8">
+                <div className="space-y-4">
+                  <h3 className="text-4xl font-bold text-white mb-6">
+                    Mohamed Kamil
+                  </h3>
+                  <p className="text-xl text-gray-300 leading-relaxed">
+                    Développeur Front-end passionné par la création d'expériences web modernes et intuitives. Spécialisé en React.js et technologies web actuelles.
+                  </p>
+                  <p className="text-xl text-gray-300 leading-relaxed">
+                    Je transforme des idées en solutions web élégantes et performantes, en mettant l'accent sur l'expérience utilisateur et les bonnes pratiques de développement.
+                  </p>
+                </div>
+
+                {/* Stats rapides */}
+                <div className="grid grid-cols-2 gap-6 py-8">
+                  <div className="text-center p-4 bg-gray-800/30 rounded-xl backdrop-blur-sm">
+                    <h4 className="text-3xl font-bold text-cyan-400 mb-2">2+</h4>
+                    <p className="text-gray-300">Years of Experience</p>
+                  </div>
+                  <div className="text-center p-4 bg-gray-800/30 rounded-xl backdrop-blur-sm">
+                    <h4 className="text-3xl font-bold text-cyan-400 mb-2">15+</h4>
+                    <p className="text-gray-300">Completed Projects</p>
+                  </div>
+                </div>
+
+                {/* Action Buttons */}
+                <div className="flex flex-wrap gap-6 pt-4">
+                  <a
+                    href="/assets/cv.pdf" // Path to your CV file
+                    download // Attribute to force download
+                    className="w-full max-w-md px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl font-semibold text-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
+                  >
+                    Download Resume
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -296,7 +314,7 @@ function App() {
       <section id="skills" className="py-20 bg-gradient-to-b from-gray-900 to-black">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
-            Compétences
+            Skills
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm transform hover:scale-105 transition-all duration-300 hover:bg-gray-800/50 flex flex-col items-center text-center">
@@ -328,17 +346,17 @@ function App() {
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center gap-2 justify-center">
                   <Star className="w-4 h-4 text-cyan-400" />
-                  Gestion de projet
+                  Project Management
                 </li>
                 <li className="flex items-center gap-2 justify-center">
                   <Star className="w-4 h-4 text-cyan-400" />
-                  Travail d'équipe
+                  Team Collaboration
                 </li>
                 <li className="flex items-center gap-2 justify-center">
                   <Star className="w-4 h-4 text-cyan-400" />
-                  Résolution de problèmes
+                  Problem Solving
                 </li>
-                <li className="flex items-center gap-2 justify-center">
+                <li className="flex items-center gap-2">
                   <Star className="w-4 h-4 text-cyan-400" />
                   Communication
                 </li>
@@ -352,7 +370,7 @@ function App() {
       <section id="projects" className="py-20 bg-gradient-to-b from-black to-gray-900">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
-            Projets
+            Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
@@ -411,40 +429,55 @@ function App() {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-20 bg-gradient-to-b from-black to-gray-900">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
-            Formation
+      <section id="education" className="py-24 bg-gradient-to-b from-black to-gray-900">
+        <div className="container mx-auto px-8">
+          <h2 className="text-5xl font-bold mb-16 text-center bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+            Education
           </h2>
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm transform hover:scale-105 transition-all duration-300">
-              <div className="flex items-start space-x-4">
-                <Blocks className="w-12 h-12 text-cyan-400 flex-shrink-0" />
-                <div>
-                  <h3 className="text-xl font-semibold">ENSA El Jadida</h3>
-                  <p className="text-gray-400 mb-2">4ème année cycle ingénieur</p>
-                  <p className="text-cyan-400 mb-4">Cybersecurity and Confidence Trust</p>
-                  <p className="text-gray-300 mb-4">
-                    Formation approfondie en sécurité informatique, développement sécurisé,
-                    et technologies web modernes. Spécialisation en protection des données
-                    et sécurisation des applications.
+          <div className="max-w-7xl mx-auto">
+            <div className="bg-gray-800/30 p-16 rounded-2xl backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300">
+              <div className="flex items-start space-x-12">
+                <Blocks className="w-24 h-24 text-cyan-400 flex-shrink-0" />
+                <div className="space-y-8 flex-grow">
+                  <div>
+                    <h3 className="text-4xl font-bold text-white mb-4">ENSA El Jadida</h3>
+                    <p className="text-2xl text-gray-400 mb-3">4th Year Engineering Program</p>
+                    <p className="text-3xl text-cyan-400 mb-8">Cybersecurity and Confidence Trust</p>
+                  </div>
+                  
+                  <p className="text-xl text-gray-300 leading-relaxed mb-12">
+                    In-depth training in information security, secure development,
+                    and modern web technologies. Specialization in data protection
+                    and application security.
                   </p>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div className="bg-gray-800/50 p-3 rounded-lg text-center">
-                      <p className="text-sm text-gray-400">Année</p>
-                      <p className="font-semibold text-cyan-400">2023-2024</p>
+
+                  <div className="grid grid-cols-2 md:grid-cols-2 gap-10">
+                    <div className="bg-gray-800/50 p-8 rounded-xl text-center transform hover:scale-105 transition-all duration-300 min-h-[160px] w-[250px] flex flex-col justify-center">
+                      <p className="text-lg text-gray-400 mb-3">Year</p>
+                      <p className="text-2xl font-semibold text-cyan-400">2023-2024</p>
                     </div>
-                    <div className="bg-gray-800/50 p-3 rounded-lg text-center">
-                      <p className="text-sm text-gray-400">Spécialité</p>
-                      <p className="font-semibold text-cyan-400">Cybersécurité</p>
+                    <div className="bg-gray-800/50 p-8 rounded-xl text-center transform hover:scale-105 transition-all duration-300 min-h-[160px] w-[250px] flex flex-col justify-center">
+                      <p className="text-lg text-gray-400 mb-3">Specialization</p>
+                      <p className="text-2xl font-semibold text-cyan-400">Cybersecurity</p>
                     </div>
-                    <div className="bg-gray-800/50 p-3 rounded-lg text-center">
-                      <p className="text-sm text-gray-400">Niveau</p>
-                      <p className="font-semibold text-cyan-400">Bac+4</p>
+                    <div className="bg-gray-800/50 p-8 rounded-xl text-center transform hover:scale-105 transition-all duration-300 min-h-[160px] w-[250px] flex flex-col justify-center">
+                      <p className="text-lg text-gray-400 mb-3">Level</p>
+                      <p className="text-2xl font-semibold text-cyan-400">Master's Equivalent</p>
                     </div>
-                    <div className="bg-gray-800/50 p-3 rounded-lg text-center">
-                      <p className="text-sm text-gray-400">Status</p>
-                      <p className="font-semibold text-cyan-400">En cours</p>
+                    <div className="bg-gray-800/50 p-8 rounded-xl text-center transform hover:scale-105 transition-all duration-300 min-h-[160px] w-[250px] flex flex-col justify-center">
+                      <p className="text-lg text-gray-400 mb-3">Status</p>
+                      <p className="text-2xl font-semibold text-cyan-400">In Progress</p>
+                    </div>
+                  </div>
+
+                  {/* Core Competencies */}
+                  <div className="mt-12 pt-8 border-t border-gray-700">
+                    <h4 className="text-xl font-semibold text-white mb-6">Core Competencies</h4>
+                    <div className="flex flex-wrap gap-4">
+                      <span className="px-6 py-3 bg-cyan-500/20 rounded-full text-cyan-400 text-lg">Web Security</span>
+                      <span className="px-6 py-3 bg-cyan-500/20 rounded-full text-cyan-400 text-lg">Cryptography</span>
+                      <span className="px-6 py-3 bg-cyan-500/20 rounded-full text-cyan-400 text-lg">Secure Development</span>
+                      <span className="px-6 py-3 bg-cyan-500/20 rounded-full text-cyan-400 text-lg">Risk Analysis</span>
                     </div>
                   </div>
                 </div>
@@ -463,15 +496,15 @@ function App() {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm">
-                <h3 className="text-2xl font-semibold mb-6">Contactez-moi</h3>
+                <h3 className="text-2xl font-semibold mb-6">Contact Me</h3>
                 <form action="https://formsubmit.co/mk.zahiri03@gmail.com" method="POST" className="space-y-4">
                   <div>
-                    <label className="block text-sm font-medium mb-2">Nom</label>
+                    <label className="block text-sm font-medium mb-2">Name</label>
                     <input
                       type="text"
                       name="name"
                       className="w-full px-4 py-2 bg-gray-900/50 rounded-lg focus:ring-2 focus:ring-cyan-400 outline-none"
-                      placeholder="Votre nom"
+                      placeholder="Your name"
                       required
                     />
                   </div>
@@ -481,7 +514,7 @@ function App() {
                       type="email"
                       name="email"
                       className="w-full px-4 py-2 bg-gray-900/50 rounded-lg focus:ring-2 focus:ring-cyan-400 outline-none"
-                      placeholder="votre@email.com"
+                      placeholder="your@email.com"
                       required
                     />
                   </div>
@@ -490,7 +523,7 @@ function App() {
                     <textarea
                       name="message"
                       className="w-full px-4 py-2 bg-gray-900/50 rounded-lg focus:ring-2 focus:ring-cyan-400 outline-none h-32"
-                      placeholder="Votre message"
+                      placeholder="Your message"
                       required
                     ></textarea>
                   </div>
@@ -498,12 +531,12 @@ function App() {
                     type="submit"
                     className="w-full py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg hover:opacity-90 transition-opacity"
                   >
-                    Envoyer
+                    Send Message
                   </button>
                 </form>
               </div>
               <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm">
-                <h3 className="text-2xl font-semibold mb-6">Informations</h3>
+                <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
                     <Mail className="w-6 h-6 text-cyan-400" />
@@ -517,19 +550,19 @@ function App() {
                   <div className="flex items-center space-x-4">
                     <Globe className="w-6 h-6 text-cyan-400" />
                     <div>
-                      <p className="font-medium">Localisation</p>
-                      <p className="text-gray-300">Casablanca, Maroc</p>
+                      <p className="font-medium">Location</p>
+                      <p className="text-gray-300">Casablanca, Morocco</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
                     <Phone className="w-6 h-6 text-cyan-400" />
                     <div>
-                      <p className="font-medium">Téléphone</p>
+                      <p className="font-medium">Phone</p>
                       <p className="text-gray-300">+212 6 45 08 46 26</p>
                     </div>
                   </div>
                   <div className="pt-6">
-                    <p className="font-medium mb-4">Réseaux sociaux</p>
+                    <p className="font-medium mb-4">Social Networks</p>
                     <div className="flex space-x-4">
                       <a
                         href="https://github.com"
@@ -540,7 +573,7 @@ function App() {
                         <Github className="w-6 h-6" />
                       </a>
                       <a
-                        href="https://linkedin.com"
+                        href="https://linkedin.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-3 bg-gray-900/50 rounded-full hover:bg-gray-700/50 transition-colors"
